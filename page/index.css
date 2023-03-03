@@ -1,0 +1,87 @@
+.container {
+  max-width: 256px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.head {
+  width: 100%;
+  height: 48px;
+  border: 8px solid rgb(177, 173, 173);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(231, 226, 226);
+}
+
+.head__btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-image: url('../images/sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0 -24px;
+  margin: 0;
+  padding: 0;
+}
+
+.head__num{
+  /* width: 48px; */
+  height: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.head__item {
+  width: 16px;
+  height: 100%;
+  border: 1px solid red;
+  margin: 0;
+}
+
+.head__num_mines {
+  margin-left: 8px;
+}
+
+.head__num_timer {
+  margin-right: 8px;
+}
+
+.border {
+  width: 100%;
+  height: 256px;
+  border: 8px solid rgb(177, 173, 173);
+  border-top: none;
+  box-sizing: content-box;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  width: 256px;
+  height: 256px;
+  gap: 0;
+  margin: 0 auto;
+}
+
+.field__cell {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0 -51px;
+}
