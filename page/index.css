@@ -50,7 +50,7 @@
   margin: 0;
 }
 
-.head__item-timer {
+.head__item-timer, .head__item-bomb {
   background-image: url('../images/sprite.png');
   background-repeat: no-repeat;
   background-position: -126px 0;
@@ -89,4 +89,10 @@
   background-image: url('../images/sprite.png');
   background-repeat: no-repeat;
   background-position: 0 -51px;
+}
+.field__cell_flag {
+  background-position: -34px -51px;
+}
+.field__cell_question {
+  background-position: -51px -51px;
 }
